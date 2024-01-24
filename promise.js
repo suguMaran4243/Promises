@@ -165,3 +165,12 @@ const promiseRes = new Promise((res, rej) => {
   resolve = res;
   reject = rej;
 });
+
+function printName()
+{
+  console.log("Hi hello Welcome")
+  
+}
+let process=setInterval(printName,10000)
+clearInterval(process)
+
