@@ -1,0 +1,4 @@
+/JavaScript is a synchrnous process to change that into asynchrnous there are difference concept like promise..
+Promises
+promise.all()
+  --The returned promise fullfils when all the promise are fullfilled
