@@ -2,3 +2,17 @@
 Promises
 promise.all()
   --The returned promise fullfils when all the promise are fullfilled
+promise.allSettled
+ --- It return when all the promises are allSettled.
+ promise.any()
+  ----This returned promise fulfills when any of the input's promises fulfills, with this first fulfillment value.
+promise.catch()
+ --It catch the error when the promise is rejected
+ promise.finally()
+ --It occurs eventhough the promise is resolved or rejected.It always happens.
+ promise.race()
+ -This returned promise settles with the eventual state of the first promise that settles faster.
+promise.reject()
+-The Promise.reject() static method returns a Promise object that is rejected with a given reason.
+promise.resolve()
+-If the value is a promise, that promise is returned; if the value is a thenable, Promise.resolve() will call the then() method with two callbacks it prepared; otherwise the returned promise will be fulfilled with the value.

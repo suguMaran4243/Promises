@@ -137,11 +137,11 @@ const promiseRace2=new Promise((resolve,reject)=>
 {
   setTimeout(()=>
   {
-    resolve('It resolved after 10 seconds')
-  },10000
+    reject('It reject after 10 seconds')
+  },1000
   )
 })
-Promise.race([promiseRace1,promiseRace2]).then((fast)=>console.log(fast))
+Promise.race([promiseRace1,promiseRace2]).then((fast)=>console.log(fast)).catch((err)=>console.log(err))
 
 //Promise.reject
 function resolved(res)
